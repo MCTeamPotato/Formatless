@@ -165,7 +165,7 @@ tasks.register("publishCurseForge", TaskPublishCurseForge) {
         if (!isOld) mainFile.addOptional("open-parties-and-claims")
     }
     if (embeddiumIntegration) mainFile.addOptional("embeddium")
-    if (duplicationLess) mainFile.addRequirement("duplicationless")
+    if (useDuplicationLess) mainFile.addRequirement("duplicationless")
 
     UploadArtifact sourcesFile = mainFile.withAdditionalFile(sourcesJar)
     sourcesFile.changelog = currentChangeLog
