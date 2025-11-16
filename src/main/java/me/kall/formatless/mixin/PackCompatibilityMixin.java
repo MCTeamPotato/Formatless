@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(PackCompatibility.class)
 public abstract class PackCompatibilityMixin {
     @Inject(method = "forFormat", at = @At("HEAD"), cancellable = true)
-    private static void checkCompatibility(int i, CallbackInfoReturnable<PackCompatibility> cir) {
+    private static void checkCompatibility(CallbackInfoReturnable<PackCompatibility> cir) {
         cir.setReturnValue(PackCompatibility.COMPATIBLE);
     }
 }
