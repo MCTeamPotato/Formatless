@@ -1,0 +1,13 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "formatless"
+version = "${version}"
+displayName = "Formatless"
+authors = "Kall"
+description = '''
+'''
+#logoFile = ""
